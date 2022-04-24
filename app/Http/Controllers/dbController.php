@@ -8,8 +8,9 @@ use App\dbTest;
 class dbController extends Controller
 {
     //
-    public function index(){
+    public function index($id){
         $test = new dbTest();
+        $test->i = $id;
         $test->save();
     }
 }

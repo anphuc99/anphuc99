@@ -15,6 +15,7 @@ class CreateDbTestsTable extends Migration
     {
         Schema::create('db_tests', function (Blueprint $table) {
             $table->id();
+            $table->string("i");
             $table->timestamps();
         });
     }
